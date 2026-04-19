@@ -1,0 +1,22 @@
+cmake:
+  board:
+    name: 'nrf5340dk'
+    path:
+     - '/home/mlorenc/ncs/v3.2.4/zephyr/boards/nordic/nrf5340dk'
+    qualifiers: 'nrf5340/cpuapp'
+    revision: ''
+  images:
+   - name: 'mqtt'
+     source-dir: '/home/mlorenc/ncs/v3.2.4/HackNaRok2026/nRF53/mqtt'
+     type: 'MAIN'
+  kconfig:
+    files:
+     - '/home/mlorenc/ncs/v3.2.4/HackNaRok2026/nRF53/build/_sysbuild/empty.conf'
+     - '/home/mlorenc/ncs/v3.2.4/HackNaRok2026/nRF53/build/_sysbuild/empty.conf'
+    user-files:
+     - '/home/mlorenc/ncs/v3.2.4/HackNaRok2026/nRF53/build/_sysbuild/empty.conf'
+version: '0.1.0'
+west:
+  command: '/home/mlorenc/ncs/toolchains/2ac5840438/usr/local/bin/west build -p always -b nrf5340dk/nrf5340/cpuapp mqtt/'
+  topdir: '/home/mlorenc/ncs/v3.2.4'
+  version: '1.4.0'

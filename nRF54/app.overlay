@@ -1,0 +1,10 @@
+/ {
+    hcsr04_sensor: hcsr04 {
+        compatible = "hc-sr04";
+        /* TRIG podłączony do P1.11 */
+        trigger-gpios = <&gpio1 11 GPIO_ACTIVE_HIGH>;
+        /* ECHO podłączony do P1.12 */
+        echo-gpios = <&gpio1 12 GPIO_ACTIVE_HIGH>;
+        status = "okay";
+    };
+};

@@ -1,0 +1,5 @@
+west:
+  command: /home/mlorenc/ncs/toolchains/2ac5840438/usr/local/bin/west build -p always
+    -b nrf5340dk/nrf5340/cpuapp mqtt/
+  topdir: /home/mlorenc/ncs/v3.2.4
+  version: 1.4.0
